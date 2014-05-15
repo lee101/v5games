@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Lee Penkman</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
@@ -7,7 +8,12 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
     <style>
 
@@ -30,12 +36,12 @@
             padding-bottom: 30px;
             position: relative;
             color: #363636;
-            font-size: 100px;
+            font-size: 23px;
         }
 
         p {
             color: #363636;
-            font-size: 32px;
+            font-size: 23px;
             font-weight: 100;
             letter-spacing: 3px;
             line-height: 1.5;
@@ -46,11 +52,55 @@
         }
 
         a:focus, a:active {
-        color: #99CCFF;
+            color: #99CCFF;
         }
 
         a:hover {
-        color: #3399FF;
+            color: #3399FF;
+        }
+
+        .social-links {
+            display: inline-block;
+        }
+
+        @media (min-width: 340px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 27px;
+            }
+        }
+
+        @media (min-width: 960px) {
+            h1 {
+                font-size: 80px;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            h1 {
+                font-size: 100px;
+            }
+
+            p {
+                font-size: 34px;
+            }
         }
 
     </style>
@@ -58,10 +108,46 @@
 <body>
 
 <div id="content">
-    <a class="" href=""><i class="fa fa-twitter"></i>asdf</a>
+    <p class="social-links">
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-twitter"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-google-plus"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-facebook"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-twitter"></i></a>
+        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+                class="fa fa-twitter"></i></a>
+    </p>
+
     <h1>Lee Penkman</h1>
 
-    <p><a class="github" href="http://github.com/lee101">github</a></p>
+    <p>
+        <a href="http://www.evangeler.com"
+           title="Evangeler Social Marketing" target="_blank">Evangeler
+        </a></p>
+
+    <p><a href="http://www.multiplicationmaster.com" title="Multiplication Master - Maths Maddness" target="_blank">Multiplication
+        Master</a></p>
+
+    <p><a href="http://www.wordsmashing.com" title="Word Smashing - Addicting & Fun Word Puzzle" target="_blank">Word
+        Smashing</a></p>
+
+    <p><a href="http://www.addictingwordgames.com" title="Addicting Word Games - Addicting & Fun Word Puzzles"
+          target="_blank">Addicting Word Games</a></p>
+
+    <p><a href="http://www.shoppingsmart.co.nz" title="Shopping Smart - Online Shopping Made Simple" target="_blank">Shopping
+        Smart</a></p>
+
+
+    <!-- You also need to place a container where you'd like the Coderwall badges to render. -->
+    <section class="coderwall" data-coderwall-username="lee101"
+             data-coderwall-orientation="vertical"></section>
+
 </div>
 </body>
 </html>
