@@ -14,13 +14,18 @@ body {
 	padding-bottom: 30px;
 	position: relative;
 	color: #363636;
-	.font-size(3);
+	.font-size(3.5);
 
 	-webkit-font-smoothing: subpixel-antialiased;
 	box-sizing: border-box;
 	display: block;
 	font-family: gesta, sans-serif;
 	font-weight: normal;
+}
+
+h2 {
+	.font-size(2.5);
+	margin: 45px 0 15px 0;
 }
 
 .social-links {
@@ -46,6 +51,7 @@ body {
 
 .lee-sidebar {
 	text-align: left;
+	width: 100%;
 }
 
 .lee-img {
@@ -88,5 +94,33 @@ body {
 	b {
 		margin-top: 30px;
 		display: block;
+	}
+}
+
+.nav > li.active {
+	text-decoration: none;
+	background-color: #eee;
+}
+
+.text-tiny {
+	.font-size-smaller(.07)
+}
+
+@media print {
+	a:link:after,
+	a:visited:after {
+		content: none;
+	}
+
+	.text-tiny {
+		font-size: 12px
+	}
+
+	.text-smaller {
+		font-size: 14px
+	}
+
+	.normal-text {
+		font-size: 16px
 	}
 }

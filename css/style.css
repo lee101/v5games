@@ -86,7 +86,7 @@ body {
   padding-bottom: 30px;
   position: relative;
   color: #363636;
-  font-size: 34.2px;
+  font-size: 39.9px;
   -webkit-font-smoothing: subpixel-antialiased;
   box-sizing: border-box;
   display: block;
@@ -95,27 +95,56 @@ body {
 }
 @media (min-width: 481px) {
   .main-header {
-    font-size: 43.2px;
+    font-size: 50.4px;
   }
 }
 @media (min-width: 641px) {
   .main-header {
-    font-size: 46.8px;
+    font-size: 54.6px;
   }
 }
 @media (min-width: 961px) {
   .main-header {
-    font-size: 48.6px;
+    font-size: 56.7px;
   }
 }
 @media (min-width: 1025px) {
   .main-header {
-    font-size: 50.4px;
+    font-size: 58.8px;
   }
 }
 @media (min-width: 1281px) {
   .main-header {
-    font-size: 54px;
+    font-size: 63px;
+  }
+}
+h2 {
+  font-size: 28.5px;
+  margin: 45px 0 15px 0;
+}
+@media (min-width: 481px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 641px) {
+  h2 {
+    font-size: 39px;
+  }
+}
+@media (min-width: 961px) {
+  h2 {
+    font-size: 40.5px;
+  }
+}
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+@media (min-width: 1281px) {
+  h2 {
+    font-size: 45px;
   }
 }
 .social-links {
@@ -164,6 +193,7 @@ body {
 }
 .lee-sidebar {
   text-align: left;
+  width: 100%;
 }
 .lee-img {
   border: 0 solid black;
@@ -194,6 +224,53 @@ body {
 .academic-results b {
   margin-top: 30px;
   display: block;
+}
+.nav > li.active {
+  text-decoration: none;
+  background-color: #eee;
+}
+.text-tiny {
+  font-size: 0.966px;
+}
+@media (min-width: 481px) {
+  .text-tiny {
+    font-size: 1.05px;
+  }
+}
+@media (min-width: 641px) {
+  .text-tiny {
+    font-size: 1.092px;
+  }
+}
+@media (min-width: 961px) {
+  .text-tiny {
+    font-size: 1.134px;
+  }
+}
+@media (min-width: 1025px) {
+  .text-tiny {
+    font-size: 1.176px;
+  }
+}
+@media (min-width: 1281px) {
+  .text-tiny {
+    font-size: 1.26px;
+  }
+}
+@media print {
+  a:link:after,
+  a:visited:after {
+    content: none;
+  }
+  .text-tiny {
+    font-size: 12px;
+  }
+  .text-smaller {
+    font-size: 14px;
+  }
+  .normal-text {
+    font-size: 16px;
+  }
 }
 body {
   background-repeat: repeat;
