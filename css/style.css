@@ -230,31 +230,32 @@ h2 {
   background-color: #eee;
 }
 .text-tiny {
-  font-size: 0.966px;
+  font-size: 12.42px;
+  color: gray;
 }
 @media (min-width: 481px) {
   .text-tiny {
-    font-size: 1.05px;
+    font-size: 13.5px;
   }
 }
 @media (min-width: 641px) {
   .text-tiny {
-    font-size: 1.092px;
+    font-size: 14.04px;
   }
 }
 @media (min-width: 961px) {
   .text-tiny {
-    font-size: 1.134px;
+    font-size: 14.58px;
   }
 }
 @media (min-width: 1025px) {
   .text-tiny {
-    font-size: 1.176px;
+    font-size: 15.12px;
   }
 }
 @media (min-width: 1281px) {
   .text-tiny {
-    font-size: 1.26px;
+    font-size: 16.2px;
   }
 }
 @media print {
