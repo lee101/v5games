@@ -22,143 +22,347 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
-    <style>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 
-        body {
-            text-align: center;
-            -webkit-font-smoothing: subpixel-antialiased;
-            box-sizing: border-box;
-            display: block;
-            font-family: gesta, sans-serif;
-            font-weight: normal;
-        }
-
-        #content {
-            width: 100%;
-            height: 100%;
-        }
-
-        h1 {
-            padding-top: 80px;
-            padding-bottom: 30px;
-            position: relative;
-            color: #363636;
-            font-size: 23px;
-        }
-
-        p {
-            color: #363636;
-            font-size: 23px;
-            font-weight: 100;
-            letter-spacing: 3px;
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:focus, a:active {
-            color: #99CCFF;
-        }
-
-        a:hover {
-            color: #3399FF;
-        }
-
-        .social-links {
-            display: inline-block;
-        }
-
-        @media (min-width: 340px) {
-            h1 {
-                font-size: 30px;
-            }
-
-            p {
-                font-size: 24px;
-            }
-        }
-
-        @media (min-width: 600px) {
-            h1 {
-                font-size: 60px;
-            }
-
-            p {
-                font-size: 27px;
-            }
-        }
-
-        @media (min-width: 960px) {
-            h1 {
-                font-size: 80px;
-            }
-
-            p {
-                font-size: 30px;
-            }
-        }
-
-        @media (min-width: 1100px) {
-            h1 {
-                font-size: 100px;
-            }
-
-            p {
-                font-size: 34px;
-            }
-        }
-
-    </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".lee-sidenav">
 
-<div id="content">
-    <p class="social-links">
-        <a href="https://github.com/lee101" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+<div id="top" class="content">
+<a class="hidden-print hidden-xs hidden-sm" href="https://github.com/lee101/lee101.github.io"><img  style="position: absolute; top: 0; right: 0; border: 0;"
+                                      src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                                      alt="Fork me on GitHub"
+                                      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
-        <a href="https://plus.google.com/u/0/+LeePenkman" title="Google Plus" target="_blank"><i
+<p class="social-links hidden-print">
+    <a href="https://github.com/lee101" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+
+    <a href="https://plus.google.com/u/0/+LeePenkman" title="Google Plus" target="_blank"><i
             class="fa fa-google-plus"></i></a>
 
-        <a href="http://au.linkedin.com/pub/lee-penkman/44/169/998/" title="Linkedin" target="_blank"><i
+    <a href="http://au.linkedin.com/pub/lee-penkman/44/169/998/" title="Linkedin" target="_blank"><i
             class="fa fa-linkedin"></i></a>
 
-        <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
-                class="fa fa-twitter"></i></a>
+    <a href="http://www.twitter.com/@LeeLeePenkman" title="Twitter" target="_blank"><i
+            class="fa fa-twitter"></i></a>
 
-        <a href="https://www.facebook.com/profile.php?id=100000881925921" title="Facebook" target="_blank"><i
-                class="fa fa-facebook"></i></a>
-        <a href="http://stackoverflow.com/users/1323161/lee-penkman" title="Stack Overflow" target="_blank"><i
-                class="fa fa-stack-overflow"></i></a>
-        <a href="http://www.gamedev.net/user/212137-lee101/" title="Game Dev" target="_blank">G</a>
-        <a href="http://www.quora.com/Lee-Penkman" title="Quora" target="_blank">Q</a>
-        <a href="http://www.meetup.com/members/94918342/" title="Meetup" target="_blank">M</a>
-    </p>
+    <a href="https://www.facebook.com/profile.php?id=100000881925921" title="Facebook" target="_blank"><i
+            class="fa fa-facebook"></i></a>
+    <a href="http://stackoverflow.com/users/1323161/lee-penkman" title="Stack Overflow" target="_blank"><i
+            class="fa fa-stack-overflow"></i></a>
+    <a href="http://www.gamedev.net/user/212137-lee101/" title="Game Dev" target="_blank">G</a>
+    <a href="http://www.quora.com/Lee-Penkman" title="Quora" target="_blank">Q</a>
+    <a href="http://www.meetup.com/members/94918342/" title="Meetup" target="_blank">M</a>
+</p>
 
-    <h1>Lee Penkman</h1>
+<h1 class="main-header">Lee Penkman</h1>
 
-    <p>
-        <a href="http://www.evangeler.com"
-           title="Evangeler Social Marketing" target="_blank">Evangeler
-        </a></p>
+<div class="row">
+<div class="col-md-9">
+<div class="mm-grid__section">
+<div class="media">
+    <div class="pull-left">
+        <img src="/img/me.jpg" class="lee-img" width="128" height="128"/>
+    </div>
 
-    <p><a href="http://www.multiplicationmaster.com" title="Multiplication Master - Maths Maddness" target="_blank">Multiplication
-        Master</a></p>
+    <div class="media-body">
+        <p class="text-smaller">
+            <i class="fa fa-quote-left text-gray"></i> I consider myself a useful part of any
+            organization because
+            of my strong technical expertise, work ethic and communication skills coupled with a general
+            passion for creating quality software within deadlines.
+        </p>
+    </div>
+</div>
 
-    <p><a href="http://www.wordsmashing.com" title="Word Smashing - Addicting & Fun Word Puzzle" target="_blank">Word
-        Smashing</a></p>
+<h2 id="experience">Work Experience</h2>
 
-    <p><a href="http://www.addictingwordgames.com" title="Addicting Word Games - Addicting & Fun Word Puzzles"
-          target="_blank">Addicting Word Games</a></p>
+<div class="media">
+    <a class="pull-left" href="http://www.infoxchange.net.au/"
+       title="Infoxchange" target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/c41.41.517.517/s160x160/9436_10151207660143775_597887191_n.png"
+             alt="Infoxchange Logo" width="100" height="100">
+    </a>
 
-    <p><a href="http://www.shoppingsmart.co.nz" title="Shopping Smart - Online Shopping Made Simple" target="_blank">Shopping
-        Smart</a></p>
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.infoxchange.net.au/"
+           title="Infoxchange" target="_blank">Infoxchange</a>
+
+        <p class="text-smaller">Infoxchange is a not for profit working closely with the Australian Government to make sure Technology is Easy to use and Accessible</p>
+
+        <p class="normal-text"><b>Technologies:</b> Python, Django, Docker, Bash, Less, Backbone, Bootstrap, PostgreSQL.
+        </p>
+
+        <p class="normal-text"><b>Projects:</b></p>
+        <ul>
+            <li>Human Services Network for NSW Government</li>
+            <li>Service Seeker (Similar to Google Maps)</li>
+        </ul>
+    </div>
+</div>
+<div class="media">
+    <a class="pull-left" href="http://99designs.com"
+       title="99designs" target="_blank">
+        <img class="media-object"
+             src="https://scontent-b-hkg.xx.fbcdn.net/hphotos-xfa1/t1.0-9/319732_10150923744766192_999404916_n.jpg"
+             alt="99designs Logo" width="100" height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.99designs.com"
+           title="99designs" target="_blank">99designs</a>
+
+        <p class="text-smaller">99designs is the world’s largest crowd sourced graphic design website.<br/>
+            At 99designs i became extensively experienced in responsive and mobile first
+            design, distributed and cloud computing, Amazon web services, Agile development methodologies and
+            performance optimization.</p>
+
+        <p class="normal-text"><b>Technologies:</b> PHP, Go, JavaScript, AWS, Rails, RequireJS, SASS, MySQL and
+            MongoDB.</p>
+
+        <p class="normal-text"><b>Projects:</b></p>
+
+        <ul>
+            <li>Design annotations (commenting on part of an image).</li>
+            <li>Campaign monitor to Mailchimp migration.</li>
+            <li>Migrating data to a new SSO service.</li>
+        </ul>
+    </div>
+</div>
+<div class="media">
+    <a class="pull-left" href="http://www.kiwiplan.com"
+       title="Kiwiplan" target="_blank">
+        <img class="media-object"
+             src="http://www.kiwiplan.com/sites/all/themes/kiwiplan/logo.png"
+             alt="Kiwiplan Logo" width="100" height="45">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.evangeler.com"
+           title="Kiwiplan" target="_blank">Kiwiplan</a>
+
+        <p class="text-smaller">Kiwiplan.</p>
+
+        <p class="normal-text"><b>Technologies:</b> PHP, Go, JavaScript, AWS, Rails, RequireJS, SASS, MySQL and
+            MongoDB.</p>
+
+        <p class="normal-text"><b>Projects:</b></p>
+
+        <ul>
+            <li>Design annotations (commenting on part of an image).</li>
+            <li>Campaign monitor to Mailchimp migration.</li>
+            <li>Migrating data to a new SSO service.</li>
+        </ul>
+    </div>
+</div>
+<h2 id="projects">Pet projects</h2>
 
 
-    <!-- You also need to place a container where you'd like the Coderwall badges to render. -->
-    <section class="coderwall" data-coderwall-username="lee101"
-             data-coderwall-orientation="vertical"></section>
+<div class="media">
+
+    <a class="pull-left" href="http://www.evangeler.com"
+       title="Evangeler Social Marketing" target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/p100x100/10003506_721564694530354_277872486_a.png"
+             alt="Evangeler Logo" width="100" height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.evangeler.com"
+           title="Evangeler Social Marketing" target="_blank">Evangeler</a>
+
+        <p class="text-smaller">Create Viral Marketing Campaigns! Promote Your Product With The
+            Power Of The People!</p>
+
+        <p class="normal-text"><b>Technologies:</b> Python, Backbone, Facebook API, Google App
+            Engine.</p>
+
+        <a class="btn" href="https://github.com/lee101/evangeler"
+           title="Evangeler On Github"
+           target="_blank"
+                >Github</a>
+    </div>
+</div>
+<div class="media">
+
+    <a class="pull-left" href="http://www.multiplicationmaster.com"
+       title="Multiplication Master - Maths Maddness"
+       target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/p100x100/1901620_521219981331417_1375363601_a.png"
+             alt="Multiplication master Logo" width="100" height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.multiplicationmaster.com"
+           title="Multiplication Master - Maths Maddness"
+           target="_blank">Multiplication
+            master</a>
+
+        <p class="text-smaller">Multiplication Master is a Fun way of learning maths and to
+            train your brain.</p>
+
+        <p class="normal-text"><b>Technologies:</b> Python, Bootstrap, JavaScript, Google App
+            Engine.</p>
+
+        <a class="btn" href="https://github.com/lee101/multiplicationmaster"
+           title="Multiplication Master Github"
+           target="_blank"
+                >Github</a>
+
+    </div>
+</div>
+<div class="media">
+
+    <a class="pull-left" href="http://www.addictingwordgames.com"
+       title="Addicting Word Games - Addicting & Fun Word Puzzles"
+       target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c12.12.155.155/s100x100/1170812_336418986495420_355624667_a.png"
+             alt="Addicting Word Games Logo" width="100" height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.addictingwordgames.com"
+           title="Addicting Word Games - Addicting & Fun Word Puzzles"
+           target="_blank">Addicting
+            Word Games</a>
+
+        <p class="text-smaller">Addicting Word Games! Play Addicting Word Games Now!</p>
+
+        <p class="normal-text"><b>Technologies:</b> Python, Bootstrap, JavaScript, Google App
+            Engine.</p>
+
+        <a class="btn" href="https://github.com/lee101/addictingwordgames"
+           title="Addicting Word Games on Github"
+           target="_blank"
+                >Github</a>
+    </div>
+</div>
+<div class="media">
+
+    <a class="pull-left" href="http://www.wordsmashing.com"
+       title="Word Smashing - Addicting & Fun Word Puzzle"
+       target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c0.3.180.180/s100x100/954810_159202914259128_1730933275_a.png"
+             alt="Word Smashing Logo"
+             width="100"
+             height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.wordsmashing.com"
+                >Word Smashing</a>
+
+        <p class="text-smaller">Addicting & Fun Word Puzzle</p>
+
+        <p class="normal-text"><b>Technologies:</b> Python, Bootstrap, JavaScript, Google App
+            Engine.</p>
+
+        <a class="btn" href="https://github.com/lee101/wordsmashing"
+           title="Wordsmashing on Github"
+           target="_blank"
+                >Github</a>
+    </div>
+</div>
+<div class="media">
+
+    <a class="pull-left" href="http://www.shoppingsmart.co.nz"
+       title="Shopping Smart - Online Shopping Made Simple"
+       target="_blank">
+        <img class="media-object"
+             src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfa1/t1.0-9/487855_404596589575804_1259497160_n.jpg"
+
+             alt="Shopping Smart Logo" width="100" height="100">
+    </a>
+
+    <div class="media-body">
+        <a class="media-heading mm-footer__heading" href="http://www.shoppingsmart.co.nz"
+           title="Shopping Smart - Online Shopping Made Simple"
+           target="_blank">Shopping
+            Smart</a>
+
+        <p class="text-smaller">New Zealand Price comparison website</p>
+
+        <p class="normal-text"><b>Technologies:</b> ASP.NET, C#, MVC 3, Originally Java &amp; Google App
+            Engine</p>
+
+
+    </div>
+</div>
+
+
+<h2 id="education">Education</h2>
+
+<p>Bachelor of Science in Computer Science</p>
+
+<h2 id="scholarships">Scholarships</h2>
+
+<h2 id="certifications">Certifications</h2>
+
+<h2 id="interests">My interests</h2>
+
+<h2 id="references">References</h2>
+
+<p class="text-smaller">
+    References available on request,
+    Email me at <a href="mailto:leepenkman@gmail.com">leepenkman@gmail.com</a>
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3 hidden-sm hidden-xs">
+    <div data-spy="affix" data-offset-top="60" data-offset-bottom="200"
+         class="lee-sidebar hidden-sm hidden-xs hidden-print"
+         role="complementary">
+        <ul class="nav lee-sidenav">
+
+            <li class="active">
+                <a href="#me">Me</a>
+            </li>
+            <li>
+                <a href="#experience">Work Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Pet projects</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#scholarships">Scholarships</a>
+            </li>
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
+            <li>
+                <a href="#interests">My interests</a>
+            </li>
+            <li>
+                <a href="#references">References</a>
+            </li>
+            <li>
+                <a href="#references">References</a>
+            </li>
+            <li>
+                <a class="back-to-top" href="#top">
+                    Back to top
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+</div>
+
+
+<!-- You also need to place a container where you'd like the Coderwall badges to render. -->
+<section class="coderwall hidden-print" data-coderwall-username="lee101"
+         data-coderwall-orientation="vertical"></section>
 
 </div>
 </body>
