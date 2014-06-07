@@ -176,6 +176,25 @@ body {
   position: fixed;
   top: 20px;
 }
+.academic-results table tr td {
+  padding: 4px;
+}
+.academic-results table tr td:nth-child(1) {
+  width: 10%;
+}
+.academic-results table tr td:nth-child(2) {
+  width: 10%;
+}
+.academic-results table tr td:nth-child(3) {
+  width: 70%;
+}
+.academic-results table tr td:nth-child(4) {
+  width: 10%;
+}
+.academic-results b {
+  margin-top: 30px;
+  display: block;
+}
 body {
   background-repeat: repeat;
   background-position: center 12px;
