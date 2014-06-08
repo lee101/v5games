@@ -3,18 +3,18 @@ module.exports = function (grunt) {
 		watch: {
 			options: { livereload: true },
 			less: {
-				files: "less/*",
+				files: "static/less/*",
 				tasks: ["less"]
 			}
 		},
 		less: {
 			dist: {
 				files: {
-					'css/style.css': ['less/main.less']
+					'static/css/style.css': ['static/less/main.less']
 				},
 				options: {
 					sourceMap: true,
-					sourceMapFilename: 'css/style.css.map',
+					sourceMapFilename: 'static/css/style.css.map',
 					sourceMapBasepath: '/',
 					sourceMapRootpath: '/'
 				}
