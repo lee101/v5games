@@ -264,13 +264,31 @@ h2 {
     content: none;
   }
   .text-tiny {
-    font-size: 12px;
+    font-size: 10px;
   }
   .text-smaller {
-    font-size: 14px;
+    font-size: 11px;
   }
   .normal-text {
+    font-size: 12px;
+  }
+  .media-heading,
+  .mm-footer__heading {
+    font-size: 13px !important;
+  }
+  h2,
+  .main-header {
     font-size: 16px;
+  }
+  .media-object {
+    display: none !important;
+  }
+  .github-link {
+    display: none;
+  }
+  .academic-results,
+  body {
+    font-size: 12px;
   }
 }
 body {
