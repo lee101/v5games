@@ -12,11 +12,6 @@ handlers:
   static_dir: static
   http_headers:
     Vary: Accept-Encoding
-- url: /transient/*
-  static_dir: transient
-  http_headers:
-    Vary: Accept-Encoding
-  expiration: "0d 1h"
 #
 #- url: /favicon.ico
 #  static_files: static/favicon.ico
@@ -31,14 +26,13 @@ handlers:
 #  static_files: static/channel.html
 #  upload: static/channel.html
 #
-#- url: /robots.txt
-#  static_files: transient/robots.txt
-#  upload: transient/robots.txt
-
-- url: /lib/static/*
-  static_dir: lib/static
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
   http_headers:
     Vary: Accept-Encoding
+  expiration: "0d 1h"
+
 - url: .*
   script: main.app
 
