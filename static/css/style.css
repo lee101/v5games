@@ -300,6 +300,27 @@ body {
   background-color: white;
   position: relative;
 }
+.wordsmashing-background {
+  background-image: url(/static/img/word-smashing-board-bg1400x773.png);
+  background-repeat: repeat;
+}
+.multiplication-master-background {
+  background-image: url(/static/img/graph_paper_texture.jpg);
+  background-repeat: repeat;
+}
+.big-multiplayer-chess-background {
+  background-image: url(/static/img/big-multiplayer-chess-screenshot-early-game1000x872.png);
+  background-repeat: repeat;
+}
+.big-shadow {
+  -webkit-filter: drop-shadow(0 0 20px #db524b);
+  -moz-filter: drop-shadow(0 0 20px #db524b);
+  -ms-filter: drop-shadow(0 0 20px #db524b);
+  filter: drop-shadow(0 0 20px #db524b);
+}
+.inline {
+  display: inline;
+}
 #mainbody {
   position: relative;
 }
