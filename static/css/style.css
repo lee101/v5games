@@ -311,6 +311,13 @@ body {
 .big-multiplayer-chess-background {
   background-image: url(/static/img/big-multiplayer-chess-screenshot-early-game1000x872.png);
   background-repeat: repeat;
+  background-position: 136px -248px;
+}
+.big-multiplayer-chess-logo {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ed9c28;
+  text-shadow: 0 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 .big-shadow {
   -webkit-filter: drop-shadow(0 0 20px #db524b);
