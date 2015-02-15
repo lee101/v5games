@@ -31,7 +31,13 @@ body {
     color: #ed9c28;
 
     text-shadow: 0 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
 
+.v5-logo {
+    height: 100px;
+    @media (min-height: 450px) {
+        height: inherit;
+    }
 }
 .big-shadow {
     //    .box-shadow(0 1px 10px rgba(20, 20, 20, 0.5));
@@ -260,10 +266,15 @@ body {
     background-color: @gray-lighter;
     text-align: left;
     font-size: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @media (min-height: 400px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: 400px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     p {
         margin-top: 30px;
         margin-bottom: 30px;

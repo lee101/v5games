@@ -319,6 +319,14 @@ body {
   color: #ed9c28;
   text-shadow: 0 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
+.v5-logo {
+  height: 100px;
+}
+@media (min-height: 450px) {
+  .v5-logo {
+    height: inherit;
+  }
+}
 .big-shadow {
   -webkit-filter: drop-shadow(0 0 20px #db524b);
   -moz-filter: drop-shadow(0 0 20px #db524b);
@@ -634,10 +642,18 @@ body {
   background-color: #eeeeee;
   text-align: left;
   font-size: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+}
+@media (min-height: 400px) {
+  .mm-article-theme {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 400px) {
+  .mm-article-theme {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .mm-article-theme p {
   margin-top: 30px;

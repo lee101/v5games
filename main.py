@@ -26,6 +26,10 @@ class MainHandler(BaseHandler):
     def get(self):
         self.render('index.html')
 
+class AdsHandler(BaseHandler):
+    def get(self):
+        self.render('ads.jinja2')
+
 
 class NotFoundHandler(BaseHandler):
     def get(self):
