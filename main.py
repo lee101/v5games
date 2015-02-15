@@ -44,6 +44,7 @@ class SlashMurdererApp(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
                                   ('/', MainHandler),
+                                  ('/ads', AdsHandler),
                                   ('(.*)/$', SlashMurdererApp),
                               ] + [
                                   ('/.*', NotFoundHandler),
