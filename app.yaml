@@ -68,6 +68,15 @@ pagespeed:
 inbound_services:
 - warmup
 
+# YOLO cost saving autoscaling
+automatic_scaling:
+  max_idle_instances: 1
+  target_cpu_utilization: .95
+  target_throughput_utilization: .95
+  min_pending_latency: 300ms
+  max_pending_latency: 15000ms
+  max_concurrent_requests: 80
+
 skip_files:
 - ^(.*/)?#.*#$
 - ^(.*/)?.*~$
