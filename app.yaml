@@ -49,22 +49,6 @@ automatic_scaling:
 #   min_idle_instances: 2
 #   max_pending_latency: 4.5s
 
-pagespeed:
-
-#  url_blacklist:
-#  - http://www.evangeler.com/music/*
-#  - http://www.evangeler.com/sitemap
-#  - http://www.evangeler.com/manifest.webapp
-#  - https://evangeler.appspot.com/buy
-  enabled_rewriters:
-  - CollapseWhitespace
-  - CombineHeads
-  # - ElideAttributes
-  - RemoveComments
-  - MinifyCss
-  # - InlineJs
-  # - LeftTrimUrls
-
 inbound_services:
 - warmup
 
