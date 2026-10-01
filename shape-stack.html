@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shape Stack | v5 Games</title>
+    <meta name="description" content="Sort falling circles, triangles, and squares into matching stacks in this free shape game.">
+    <meta name="keywords" content="shape game, geometry game, sorting game, stacking game, v5 games">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#11172b">
+    <link rel="icon" href="/static/img/shape-stack-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/shape-stack.css">
+</head>
+<body>
+<main class="game-shell">
+    <header class="game-header">
+        <a class="back-link" href="/" aria-label="Back to v5 Games">&larr; v5 Games</a>
+        <div>
+            <p class="eyebrow">QUICK SORT ARCADE</p>
+            <h1>Shape Stack</h1>
+        </div>
+        <button id="soundButton" class="icon-button" type="button" aria-pressed="true" aria-label="Turn sound off">Sound on</button>
+    </header>
+
+    <section class="scoreboard" aria-label="Game status">
+        <div><span class="score-label">Score</span><strong id="score">0</strong></div>
+        <div><span class="score-label">Best</span><strong id="best">0</strong></div>
+        <div><span class="score-label">Level</span><strong id="level">1</strong></div>
+        <div><span class="score-label">Lives</span><strong id="lives" aria-label="3 lives">&#9679; &#9679; &#9679;</strong></div>
+    </section>
+
+    <section class="game-panel" aria-label="Shape Stack game">
+        <canvas id="gameCanvas" width="720" height="780" aria-label="Falling shape game board"></canvas>
+
+        <div id="startOverlay" class="overlay">
+            <img src="/static/img/shape-stack-icon.svg" width="112" height="112" alt="Circle, triangle, and square stacked together">
+            <h2 id="overlayTitle">Sort. Drop. Stack.</h2>
+            <p id="overlayText">Move each falling shape over its matching stack, then drop it before time runs out.</p>
+            <button id="startButton" class="primary-button" type="button">Start game</button>
+            <p class="small-copy">Arrow keys, A/D, or the buttons below</p>
+        </div>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+        <button id="leftButton" class="control-button" type="button" aria-label="Move shape left">
+            <span aria-hidden="true">&#9664;</span> Left
+        </button>
+        <button id="dropButton" class="control-button control-button--drop" type="button" aria-label="Drop shape">
+            <span aria-hidden="true">&#9660;</span> Drop
+        </button>
+        <button id="rightButton" class="control-button" type="button" aria-label="Move shape right">
+            Right <span aria-hidden="true">&#9654;</span>
+        </button>
+    </section>
+
+    <p class="instructions">Match circles, triangles, and squares. Correct streaks earn bonus points; a wrong stack costs a life.</p>
+</main>
+<script src="/static/js/shape-stack.js"></script>
+</body>
+</html>
