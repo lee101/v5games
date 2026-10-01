@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>v5 Games</title>
     <meta name="description"
-          content="v5 Games Multiplication Master, Word Smashing, Big Multiplayer Chess">
+          content="v5 Games Shape Stack, Multiplication Master, Word Smashing, Big Multiplayer Chess">
     <meta name="keywords"
-          content="lee penkman, developers, word smashing, big multiplayer chess, addicting word games, multiplication master, webfiddle">
+          content="shape stack, shape game, lee penkman, developers, word smashing, big multiplayer chess, addicting word games, multiplication master, webfiddle">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -20,14 +20,50 @@
 
     <link href="/static/css/style.css" rel="stylesheet" type="text/css">
 
+    <style>
+        .shape-stack-background {
+            background-color: #11172b;
+            background-image:
+                radial-gradient(circle at 18% 22%, rgba(155, 93, 229, .45), transparent 260px),
+                radial-gradient(circle at 80% 75%, rgba(76, 201, 240, .3), transparent 300px);
+        }
+
+        .shape-stack-logo {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 16px;
+            color: white;
+            font-size: 32px;
+            letter-spacing: -1px;
+            text-shadow: 0 3px 8px rgba(0, 0, 0, .45);
+        }
+
+        .shape-stack-logo .v5-logo {
+            margin-right: 13px;
+        }
+
+        @media (max-width: 520px) {
+            .shape-stack-logo {
+                font-size: 22px;
+            }
+        }
+    </style>
+
 </head>
 <body>
+<div class="row shape-stack-background mm-article-theme">
+        <span class="shape-stack-logo">
+            <img class="v5-logo img-responsive inline" src="/static/img/shape-stack-icon.svg" alt="Shape Stack">
+            <strong>SHAPE STACK</strong>
+        </span>
+        <a class="btn btn-lg btn-warning mm-btn-hg" href="/shape-stack">Play Now!</a>
+</div>
 <div class="row wordsmashing-background mm-article-theme">
-        <img class="v5-logo big-shadow img-responsive inline" src="/static/img/wordsmashing_icon128.png">
+        <img class="v5-logo big-shadow img-responsive inline" src="/static/img/wordsmashing_icon128.png" alt="Word Smashing">
         <a class="btn btn-lg btn-warning mm-btn-hg big-shadow" href="http://www.wordsmashing.com" target="_blank">Play Now!</a>
 </div>
 <div class="row multiplication-master-background mm-article-theme">
-        <img class="v5-logo img-responsive inline" src="/static/img/multiplication-master-logo.png">
+        <img class="v5-logo img-responsive inline" src="/static/img/multiplication-master-logo.png" alt="Multiplication Master">
         <a class="btn btn-lg btn-warning mm-btn-hg" href="http://www.multiplicationmaster.com" target="_blank">Play Now!</a>
 </div>
 <div class="row big-multiplayer-chess-background mm-article-theme">
