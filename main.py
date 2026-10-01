@@ -26,6 +26,12 @@ class MainHandler(BaseHandler):
     def get(self):
         self.render('index.html')
 
+
+class ShapeStackHandler(BaseHandler):
+    def get(self):
+        self.render('shape-stack.html')
+
+
 class AdsHandler(BaseHandler):
     def get(self):
         self.render('ads.jinja2')
@@ -44,6 +50,7 @@ class SlashMurdererApp(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
                                   ('/', MainHandler),
+                                  ('/shape-stack', ShapeStackHandler),
                                   ('/ads', AdsHandler),
                                   ('(.*)/$', SlashMurdererApp),
                               ] + [
